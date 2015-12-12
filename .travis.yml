@@ -15,7 +15,3 @@ before_script:
     - app/console doctrine:database:create --env=test --no-interaction --quiet
     - app/console doctrine:migrations:migrate --env=test --no-interaction --quiet
     - app/console cache:warmup --env=test --quiet
-
-script:
-#    - ./bin/phpspec run -fpretty --verbose
-#    - ./bin/behat  --no-snippets --no-paths --verbose
